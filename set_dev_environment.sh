@@ -1,0 +1,3 @@
+export VCAP_SERVICES="{\"a9hcp-mongodb\":[{\"name\":\"mongodb-instance-name\",\"label\":\"a9hcp-mongodb\",\"tags\":[],\"plan\":\"mongodb_plan_name\",\"credentials\":{\"hostname\":\"localhost\",\"host\":\"localhost\",\"port\":27017,\"username\":null,\"password\":null,\"name\":\"my_name\",\"db\":\"nodejs_mongodb_example\",\"url\":\"mongodb://dockerhost:27017/quotes\"}}]}"
+
+export MONGODB_SERVICE_NAME="a9hcp-mongodb"

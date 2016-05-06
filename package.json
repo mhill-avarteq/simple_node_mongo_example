@@ -1,0 +1,21 @@
+{
+  "name": "simple_node_mongo_example",
+  "version": "0.0.1",
+  "description": "simple node application that connects to a mongodb and can be deployed with cloudfoundry",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "cloudfoundry"
+  ],
+  "author": "Noah Ispas",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14"
+  }
+}

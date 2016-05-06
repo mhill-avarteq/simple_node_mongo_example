@@ -1,0 +1,6 @@
+node_modules/
+manifest.yml
+.vscode/
+.DS_Store
+*.log
+
