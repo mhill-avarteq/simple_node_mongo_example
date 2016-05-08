@@ -1,4 +1,4 @@
-var Quote = require('./db/quote.js'); 
+var Quote = require('../db/quote.js'); 
 
 random_page = function(req, res) {
 	Quote.count({}, function(err, count) {

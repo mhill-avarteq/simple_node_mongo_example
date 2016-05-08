@@ -1,14 +1,11 @@
-var Quote = require('./db/quote.js'); 
-var seeds = require('./db/seeds.js');
+var Quote = require('../db/quote.js'); 
+var seeds = require('../db/seeds.js');
 
 get_mongo_url = function () {
   try {
 		var mongodb_service_name = process.env.MONGODB_SERVICE_NAME;
-    console.log('mongodb service name: '+ JSON.stringify(mongodb_service_name));
     var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
-    console.log('vcap: ' + JSON.stringify(vcap_services));
     mongo_url = vcap_services[mongodb_service_name][0].credentials.url;
-    console.log(JSON.stringify(mongo_url));
     return mongo_url;
 	} catch (err) {
 		console.log("An error occured while loading the MongoDB credentials from the env:", err)

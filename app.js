@@ -2,13 +2,13 @@
 var express = require('express'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose'),
-  helper = require('./helper.js'),
+  helper = require('./bin/helper.js'),
   path = require('path');
   
 var app = express();
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -17,7 +17,7 @@ app.set('view engine', 'html');
 app.set('layout', 'layout');
 app.use(express.static(path.join(__dirname, 'views')));
 
-var routes = require('./routes.js');
+var routes = require('./bin/routes.js');
 app.use('/', routes);
 
 //connect and seed if necessary
