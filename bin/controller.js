@@ -15,7 +15,6 @@ new_page = function(req, res) {
 };
 
 create_quote = function(req, res) {
-	console.log('sdf');
 	author = req.body.author
 	quote = req.body.quote
 
