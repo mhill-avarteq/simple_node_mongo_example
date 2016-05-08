@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.quote {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.author {
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.v-offset {
+	margin-top: 100px;
+}
+
+.v-offset-small {
+	margin-top: 50px;
+}
