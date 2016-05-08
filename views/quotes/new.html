@@ -1,0 +1,16 @@
+<div class="center">
+	<h2>Add Quote</h2>
+	<div class="v-offset-small"></div>
+	<form action='/quotes/create' method='post'>
+		<p>Author</p>
+	   	<p><input type='text' name='author'></input></p>
+	   	<p>Quote</p>
+	   	<p>
+	   		<textarea cols="40" rows="5" name="quote"></textarea>
+	   	</p>
+	   	<p><input type="submit" value="Submit" class="btn btn-success btn-lg active button-width"></input></p>
+	</form>
+</div>
+<p class="center">
+	<a href="/quotes" class="btn btn-primary btn-lg active button-width" role="button">List</a>
+</p>

@@ -2,12 +2,19 @@
 var express = require('express'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose'),
-  helper = require('./helper.js');
+  helper = require('./helper.js'),
+  path = require('path');
   
 var app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.engine('html', require('hogan-express'));
+app.set('view engine', 'html');
+app.set('layout', 'layout');
 
 var routes = require('./routes.js');
 app.use('/', routes);

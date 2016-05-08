@@ -1,5 +1,5 @@
-var Quote = require('./models/quote.js'); 
-var seeds = require('./seeds.js');
+var Quote = require('./db/quote.js'); 
+var seeds = require('./db/seeds.js');
 
 get_mongo_url = function () {
   try {
