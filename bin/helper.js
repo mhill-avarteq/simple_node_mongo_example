@@ -5,7 +5,7 @@ get_mongo_url = function () {
   try {
 		var mongodb_service_name = process.env.MONGODB_SERVICE_NAME;
     var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
-    mongo_url = vcap_services[mongodb_service_name][0].credentials.url;
+    mongo_url = vcap_services[mongodb_service_name][0].credentials.uri;
     return mongo_url;
 	} catch (err) {
 		console.log("An error occured while loading the MongoDB credentials from the env:", err)
