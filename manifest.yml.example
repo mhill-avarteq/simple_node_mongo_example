@@ -1,5 +1,5 @@
 ---
-buildpack: http://github.com/heroku/heroku-buildpack-nodejs.git
+buildpack: nodejs_buildpack
 path: .
 services:
   - mongodb
@@ -7,8 +7,6 @@ env:
   MONGODB_SERVICE_NAME: "a9hcp-mongodb"
 
 applications:
-- name: app_name
+- name: app_name # TODO change
   memory: 200M
   instances: 1
-  host: app_name
-  domain: aws.ie.a9sapp.eu
