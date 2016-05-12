@@ -7,6 +7,10 @@ a {
   color: #00B7FF;
 }
 
+li {
+	list-style-type: none;
+}
+
 .quote {
 	font-size: 1.4em;
 	text-align: center;
