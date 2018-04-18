@@ -37,7 +37,7 @@ app.use(function(err, req, res, next) {
 
 //connect and seed if necessary
 mongo_url = helper.get_mongo_url();
-mongoose.connect(mongo_url);
+mongoose.connect(mongo_url, { useMongoClient: true });
 
 mongoose.connection.on('connected', function () {
   console.log('Mongoose connection open to ' + mongo_url);
